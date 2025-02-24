@@ -1,4 +1,4 @@
-# Hianime Episode Mapper
+# Aniwatch Episode Mapper
 
 Simple API to map Anilist IDs to Hianime episode IDs with additional metadata from ani.zip.
 
@@ -50,21 +50,6 @@ For Vercel:
 npm run dev:vercel
 ```
 
-For Netlify:
-```bash
-npm run dev:netlify
-```
-
-For Cloudflare Workers:
-```bash
-npm run dev:cloudflare
-```
-
-Development servers will run on:
-- Express: http://localhost:3000
-- Vercel: http://localhost:3000
-- Netlify: http://localhost:8888
-- Cloudflare: http://localhost:8787
 
 ## Deployment
 
@@ -83,45 +68,6 @@ vercel login
 3. Deploy:
 ```bash
 npm run deploy:vercel
-```
-
-### Deploy to Netlify
-
-1. Install Netlify CLI:
-```bash
-npm install -g netlify-cli
-```
-
-2. Login to Netlify:
-```bash
-netlify login
-```
-
-3. Initialize site (first time only):
-```bash
-netlify init
-```
-
-4. Deploy:
-```bash
-npm run deploy:netlify
-```
-
-### Deploy to Cloudflare Workers
-
-1. Install Wrangler CLI:
-```bash
-npm install -g wrangler
-```
-
-2. Login to Cloudflare:
-```bash
-wrangler login
-```
-
-3. Deploy:
-```bash
-npm run deploy:cloudflare
 ```
 
 ## Project Structure
@@ -164,20 +110,6 @@ The API includes proper error handling for:
 - Serverless Functions
 - Edge Network deployment
 - GitHub integration
-
-### Netlify
-- Automatic HTTPS
-- Serverless Functions
-- CDN deployment
-- Continuous deployment
-- Branch deploys
-
-### Cloudflare Workers
-- Global CDN distribution
-- Low latency responses
-- DDoS protection
-- Automatic SSL/TLS
-- Edge computing capabilities
 
 ## License
 
